@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>{{meeting.title}}</h1>
+    <p>
+        This meeting has been scheduled on: {{meeting.date}}.
+    </p>
+    <p>
+        The starting time of the meeting will be at: {{meeting.start_time}}.
+    </p>
+    <p>
+         The meeting will be in: {{meeting.room}}.
+    </p>
+
+    <a href="{% url 'welcome' %}">Go to Home Page</a>
+
+</body>
+</html>

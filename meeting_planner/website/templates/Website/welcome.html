@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome!</title>
+    <link rel="stylesheet" href="{% static 'website/style.css' %}">
+</head>
+<body>
+    <h1>Welcome to the Meeting Organizer!</h1>
+    <p>
+        This is an application for the APC 440 course
+        You can visit the course at <a href="https://uwm.edu/"> APC 440</a>
+    </p>
+    <h2>
+        Current available meetings:
+    </h2>
+    
+    <img src="{% static 'website/calendar.jpg' %}" width="200px">
+    
+    <ul>
+        {% for m in meetings %}
+            <li>
+                <a href="{% url 'detail' m.id %}">{{m.title}}</a>
+            </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
