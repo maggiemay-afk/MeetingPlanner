@@ -1,2 +1,13 @@
 .idea
 *.zip
+*.log
+*.pot
+*.pyc
+*.py[cod]
+.env
+
+local_settings.pyc
+__pycache__/
+
+db.sqlite3
+settings.py
